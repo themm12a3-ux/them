@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CLB THPT Võ Nguyên Giáp - VIP PRO</title>
+
+<style>
+/* ===== FIX TRÀN MÀN HÌNH MOBILE ===== */
+
+*{
+    box-sizing:border-box;
+}
+
+html, body{
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+section, div, table{
+    max-width:100%;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+.container{
+    width:100%;
+    padding:0 15px;
+}
+.table-wrap{
+    width:100%;
+    overflow-x:auto;
+}
+
+th, td{
+    white-space:nowrap;
+}
+/* ===== FIX TABLE MOBILE VIP ===== */
+.table-wrap{
+width:100%;
+overflow-x:auto;
+margin-bottom:40px;
+}
+
+.table-wrap::-webkit-scrollbar{
+height:6px;
+}
+
+.table-wrap::-webkit-scrollbar-thumb{
+background:#ff003c;
+border-radius:10px;
+}
+/* ===== TABLE VIP PRO ===== */
+table{
+width:90%;
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:rgba(255,0,60,0.05);
+    border:1px solid rgba(255,0,60,0.4);
+    box-shadow:0 0 20px rgba(255,0,60,0.3);
+    color:white;
+}
+border-collapse:collapse;
+background:rgba(255,0,60,0.05);
+border:1px solid rgba(255,0,60,0.4);
+box-shadow:0 0 20px rgba(255,0,60,0.3);
+color:white;
+}
+
+table th{
+background:linear-gradient(90deg,#ff003c,#ff8a00);
+color:white;
+padding:12px;
+font-weight:bold;
+border:1px solid rgba(255,0,60,0.6);
+}
+
+table td{
+padding:10px;
+text-align:center;
+border:1px solid rgba(255,0,60,0.3);
+}
+
+table tr:nth-child(even){
+background:rgba(255,0,60,0.08);
+}
+
+table tr:hover{
+background:rgba(255,0,60,0.2);
+transition:0.3s;
+}
+.section button{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+border-radius:30px;
+background:linear-gradient(90deg,#ff003c,#ff8a00);
+color:white;
+font-weight:bold;
+font-size:15px;
+cursor:pointer;
+transition:0.3s;
+box-shadow:0 0 15px rgba(255,0,60,0.6);
+}
+
+.section button:hover{
+transform:scale(1.1);
+box-shadow:0 0 30px #ff003c;
+}
+/* ===== MENU FIX MOBILE ===== */
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+gap:12px;
+padding:15px;
+background:rgba(0,0,0,0.9);
+backdrop-filter:blur(10px);
+z-index:1000;
+border-bottom:2px solid #ff003c;
+
+overflow-x:auto;          /* cho phép cuộn ngang */
+white-space:nowrap;       /* không xuống dòng */
+scrollbar-width:none;     /* ẩn thanh cuộn Firefox */
+}
+
+nav::-webkit-scrollbar{
+display:none;             /* ẩn thanh cuộn Chrome */
+}
+
+nav a{
+flex:0 0 auto;            /* không co lại */
+text-decoration:none;
+color:#ff4d6d;
+padding:8px 16px;
+border-radius:25px;
+border:1px solid #ff003c;
+font-weight:600;
+transition:0.3s;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#0f0f0f,#1a0000,#140012);
+color:white;
+}
+
+
+
+/* ===== HEADER ===== */
+header{
+margin-top:90px;
+text-align:center;
+padding:70px 20px;
+}
+
+header h1{
+font-size:42px;
+letter-spacing:3px;
+background:linear-gradient(90deg,#ff003c,#ff8a00);
+-webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+text-shadow:0 0 25px rgba(255,0,60,0.6);
+}
+
+header p{
+margin-top:10px;
+color:#aaa;
+}
+
+/* ===== SECTION CARD ===== */
+.section{
+width:90%;
+max-width:1100px;
+margin:70px auto;
+padding:40px;
+border-radius:25px;
+background:rgba(255,0,60,0.05);
+border:1px solid rgba(255,0,60,0.3);
+box-shadow:0 0 25px rgba(255,0,60,0.2);
+transition:0.4s;
+scroll-margin-top:120px;
+}
+
+.section:hover{
+transform:translateY(-10px);
+box-shadow:0 0 50px rgba(255,0,60,0.6);
+}
+
+/* ===== TITLE ===== */
+.section h2{
+font-size:28px;
+margin-bottom:20px;
+color:#ff4d6d;
+border-left:5px solid #ff003c;
+padding-left:15px;
+}
+
+/* TEXT */
+.section p{
+margin:10px 0;
+line-height:1.7;
+color:#ddd;
+}
+
+.section ul{
+margin:10px 20px;
+}
+
+.section li{
+margin:6px 0;
+}
+
+/* ===== FOOTER ===== */
+footer{
+text-align:center;
+padding:25px;
+background:black;
+border-top:2px solid #ff003c;
+color:#ff4d6d;
+margin-top:60px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#stem">STEM</a>
+<a href="#vanhoa">Văn hóa đọc</a>
+<a href="#songxanh">Sống xanh</a>
+<a href="#phapluat">Pháp luật</a>
+<a href="#vannghe">Văn nghệ</a>
+<a href="#tienganh">Tiếng Anh</a>
+<a href="#thethao">Thể thao</a>
+</nav>
+
+<header>
+<h1> CÂU LẠC BỘ CỦA TRƯỜNG THPT VÕ NGUYÊN GIÁP</h1>
+<p>Phiên bản VIP PRO – Mạnh mẽ & Đẳng cấp</p>
+</header>
+
+<div class="section" id="stem">
+<h2>1.CLB STEM</h2>
+
+<p><strong>Tôn chỉ:</strong> Rèn luyện tư duy phản biện và sáng tạo công nghệ.</p>
+<p>Tiêu chí</p>
+<ul>
+    
+<li>Phát triển kỹ năng lập trình và chế tạo mô hình.</li>
+<li>Tham gia các cuộc thi khoa học – kỹ thuật.</li>
+<li>Ứng dụng công nghệ vào thực tiễn học tập.</li>
+</ul>
+
+<p><strong>Thời gian:</strong> Thứ 4 (14h00 – 17h00)</p>
+<p><strong>Người phụ trách:</strong> Phan Thị Điệp</p>
+
+<button>Đăng ký tham gia</button>
+<a href="https://ibb.co/RpcbLcxP"><img src="https://i.ibb.co/GvRpgRKk/IMG-1771434493322-1771434588527.jpg" alt="IMG-1771434493322-1771434588527" border="0"></a>
+</div>
+
+<div class="section" id="vanhoa">
+<h2>2. CLB Văn hóa đọc</h2>
+
+<p><strong>Tôn chỉ:</strong> Phát triển tri thức và nhân cách qua văn hóa đọc.</p>
+<p>Tiêu chí</p>
+<ul>
+    
+<li>Giới thiệu sách hay mỗi tháng.</li>
+<li>Thảo luận và chia sẻ cảm nhận sách.</li>
+<li>Rèn luyện kỹ năng viết và tư duy phản biện.</li>
+</ul>
+
+<p><strong>Thời gian:</strong> Thứ 4 (14h00 – 17h00)</p>
+<p><strong>Người phụ trách:</strong> Vũ Thị Lan Hương</p>
+
+<button>Đăng ký tham gia</button>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/gFygvqk2/images-1.jpg" alt="images (1)" border="0"></a>
+</div>
+<div class="section" id="songxanh">
+<h2>3. CLB Sống xanh</h2>
+
+<p><strong>Tôn chỉ:</strong> Lan tỏa lối sống bền vững.</p>
+<p>Tiêu chí</p>
+<ul>
+<li>Tổ chức hoạt động bảo vệ môi trường.</li>
+<li>Tuyên truyền giảm rác thải nhựa.</li>
+<li>Thực hiện các dự án tái chế sáng tạo.</li>
+</ul>
+
+<p><strong>Thời gian:</strong> Thứ 4 (14h00 – 17h00)</p>
+<p><strong>Người phụ trách:</strong> Nguyễn Thị Thúy Hằng</p>
+
+<button>Đăng ký tham gia</button>
+<a href="https://ibb.co/MDnG4nJ8"><img src="https://i.ibb.co/Y72yM2VD/CLB-SX-3.jpg" alt="CLB-SX-3" border="0"></a>
+</div>
+<div class="section" id="phapluat">
+<h2>4. CLB Pháp luật</h2>
+
+<p><strong>Tôn chỉ:</strong> Trang bị kiến thức pháp luật học đường.</p>
+<p>Tiêu chí</p>
+<ul>
+<li>Tìm hiểu luật giao thông và an ninh mạng.</li>
+<li>Thảo luận tình huống pháp lý thực tế.</li>
+<li>Tuyên truyền phòng chống bạo lực học đường.</li>
+</ul>
+
+<p><strong>Thời gian:</strong> Thứ 4 (14h00 – 17h00)</p>
+<p><strong>Người phụ trách:</strong> Phạm Thị Tám</p>
+
+<button>Đăng ký tham gia</button>
+<a href="https://ibb.co/KjnNNt4s"><img src="https://i.ibb.co/qM600Hqg/IMG-1771676370044-1771676387122.jpg" alt="IMG-1771676370044-1771676387122" border="0"></a>
+</div>
+<div class="section" id="vannghe">
+<h2>5.CLB Văn nghệ</h2>
+
+<p><strong>Tôn chỉ:</strong> Phát triển năng khiếu nghệ thuật.</p>
+<p>Tiêu chí</p>
+<ul>
+<li>Luyện hát, nhảy và biểu diễn sân khấu.</li>
+<li>Tham gia các chương trình văn nghệ của trường.</li>
+<li>Tổ chức sự kiện và giao lưu nghệ thuật.</li>
+</ul>
+
+<p><strong>Thời gian:</strong> Thứ 4 (14h00 – 17h00)</p>
+<p><strong>Người phụ trách:</strong> Nguyễn Thị Ly</p>
+
+<button>Đăng ký tham gia</button>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/ymWFQZ9j/vannghe.jpg" alt="vannghe" border="0"></a>
+</div>
+<div class="section" id="tienganh">
+<h2>6. CLB Tiếng Anh</h2>
+
+<p><strong>Tôn chỉ:</strong> Nâng cao kỹ năng giao tiếp tiếng Anh.</p>
+<p>Tiêu chí</p>
+<ul>
+<li>Luyện nói với chủ đề thực tế.</li>
+<li>Tổ chức mini game và debate tiếng Anh.</li>
+<li>Chuẩn bị cho các kỳ thi IELTS, TOEIC.</li>
+</ul>
+
+<p><strong>Thời gian:</strong> Thứ 4 (14h00 – 17h00)</p>
+<p><strong>Người phụ trách:</strong> Nguyễn Thanh Nhã</p>
+
+<button>Đăng ký tham gia</button>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/p9JB3s5/IMG-1771676370070-1771676387455.jpg" alt="IMG 1771676370070 1771676387455" border="0"></a>
+</div>
+<div class="section" id="thethao">
+<h2>7. CLB Thể thao</h2>
+
+<p><strong>Tôn chỉ:</strong> Rèn luyện thể chất và tinh thần đồng đội.</p>
+<p>Tiêu chí</p>
+<ul>
+<li>Tập luyện bóng đá, bóng chuyền, cầu lông.</li>
+<li>Tổ chức giải đấu nội bộ.</li>
+<li>Phát triển tinh thần teamwork và kỷ luật.</li>
+</ul>
+
+<p><strong>Thời gian:</strong> Thứ 4 (14h00 – 17h00)</p>
+<p><strong>Người phụ trách:</strong> Đỗ Tấn Khương</p>
+
+<button>Đăng ký tham gia</button>
+<a href="https://ibb.co/G4hzF3Lb"><img src="https://i.ibb.co/bMfc7RZ8/thethao1.jpg" alt="thethao1" border="0"></a>
+</div>
+<div class="table-wrap">
+<table>
+<tr>
+<th>STT</th>
+<th>Tuần</th>
+<th>Câu lạc bộ</th>
+<th>Người phụ trách</th>
+</tr>
+<tr><td>1</td><td>1</td><td>CLB STEM</td><td>Phan Thị Điệp</td></tr>
+<tr><td>2</td><td>1</td><td>CLB Văn hóa đọc</td><td>Vũ Thị Lan Hương</td></tr>
+<tr><td>3</td><td>2</td><td>CLB Sống xanh</td><td>Nguyễn Thị Thúy Hằng</td></tr>
+<tr><td>4</td><td>2</td><td>CLB Pháp luật</td><td>Phạm Thị Tám</td></tr>
+<tr><td>5</td><td>3</td><td>CLB Văn nghệ</td><td>Nguyễn Thị Ly</td></tr>
+<tr><td>6</td><td>4</td><td>CLB Tiếng Anh</td><td>Nguyễn Thanh Nhã</td></tr>
+<tr><td>7</td><td>4</td><td>CLB Thể dục thể thao</td><td>Đỗ Tấn Khương</td></tr>
+</table>
+</div>
+<footer>
+Tác giả : Đăng Thêm
+</footer>
+
+</body>
+</html>
